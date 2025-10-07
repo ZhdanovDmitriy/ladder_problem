@@ -1,9 +1,9 @@
 # ladder_problem
 Given: a, b are the width of two corridors (non-negative numbers)
+
 It is necessary: to find the length of an infinitely narrow (without width) staircase that can be carried through an absolutely straight (90 degrees) angle formed by two converging corridors with widths a and b.
 
 <img width="825" height="811" alt="image" src="https://github.com/user-attachments/assets/153e36f2-8695-49d3-afe5-527f75dc69f0" />
-<img width="852" height="814" alt="image" src="https://github.com/user-attachments/assets/89cf5489-b6ac-429b-9e87-72afae51651a" />
 <img width="832" height="789" alt="image" src="https://github.com/user-attachments/assets/f617c620-6b6b-479f-9b17-f359acbce8ca" />
 <img width="793" height="106" alt="image" src="https://github.com/user-attachments/assets/30bbb9a5-c112-42f4-a8a1-297ae843787c" />
 
