@@ -17,7 +17,9 @@ Eps - the stopping parameter (the point x_prev should be closer than Eps to the 
 
 The main idea of ​​the solution:
 Fix a corner point B. Choose L such that the staircase necessarily passes through the corridor. Take point A above point B and begin moving it along the wall. The coordinates of point C are calculated at each step. The process continues until:
+
 1) x_prev - x <= 0 - this means that point C has passed the extreme point of its trajectory (the trajectory resembles a golden ratio loop from 0 to 2Pi), meaning it can easily move on. Therefore, this L is satisfactory. We reset all variables to their initial values ​​and lengthen L by exp_coef times. A small step allows us to capture the extreme point as accurately as possible, which is why step_coef is so important. If step_coef is not large enough, we will undershoot or overshoot the extreme point.
+   
 2) x < 0. This means that our staircase does not extend into the corridor and must be shortened by compr_coef times.
 
 In both cases, the stopping condition is checked: x_prev < Eps. x_prev is the point closest to the extreme point. This condition does not guarantee the order of accuracy of Eps, but merely states that we are reasonably close to the given answer. Achieving the specified accuracy requires a more rigorous mathematical evaluation or the selection of a different stopping criterion.
@@ -32,11 +34,13 @@ If you're interested in my solution, I'd love to hear your feedback. Please give
 
 # Задача о лестнице в углу
 Дано: a, b - ширина двух коридоров (неотрицательные числа) 
+
 Необходимо: найти длину бесконечно узкой (не имеющей ширины) лестницы, которую можно пронести через абсолютно прямой (90 градусов) угол, образованный двумя сходящимися коридорами с шириной a и b.
 
 В репозитории представлена анимация численного метода решения данной задачи. Если вас интересует аналитическое решение - вы можете найти его в интернете. Мне было интересно построить численную схему для данной задачи.
 
 Основными параметрами влияющими на скорость сходимости являются:
+
 step_coef - коэфициент, отвечающий за размер сдвига точки A на каждой итерации(чем меньше, тем лучше, но тем больше итераций требуется)
 exp_coef - коэфициент растяжения отрезка AC
 compr_coef - коэфициент сжатия отрезка AC
@@ -45,6 +49,7 @@ Eps - парaметр остановки(точка x_prev должна нахо
 Основная идея решения:
 
 Фиксируем угловую точку B. Берем L такое, что лестница обязательно проходит через коридор. Точку А берем над точкой B и начинаем двигать вдоль стены. Координаты точки C считаем на каждом шаге. Процесс продолжается до тех пор, пока:
+
 1)x_prev - x  <= 0 - это означает, что точка C прошла экстримальную точку своей траектории(троектория напоминает петлю золотого сечения от 0 до 2Pi), а значит легко сможет пройти дальше. Следовательно, данная длина L нас устраивает. Мы сбрасываем все переменные на начальные значения, а L удлиняем в exp_coef раз. Маленький шаг позволяет максимально точно уловить экстремум, поэтому step_coef так важен. Если step_coef недостаточно большой, то мы будем недоходить или перепрыгивать экстремум.
 
 2)x < 0. Это означает, что наша лестница не проходит в коридор и её нужно укоротить в compr_coef раз.
