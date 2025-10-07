@@ -1,5 +1,6 @@
 # ladder_problem
-The ladder around the corner problem asks for the length of the longest ladder that can be maneuvered around a right-angle corner between two corridors of given widths with 90-degree corner.
+Given: a, b are the width of two corridors (non-negative numbers)
+It is necessary: to find the length of an infinitely narrow (without width) staircase that can be carried through an absolutely straight (90 degrees) angle formed by two converging corridors with widths a and b.
 
 The repository contains an animation of the numerical method for solving this problem. If you are interested in the analytical solution, you can find it online. I was interested in constructing a numerical scheme for this problem.
 
@@ -24,7 +25,10 @@ Note: The absolute error increases significantly if a<<b, i.e., if a and b are l
 
 If you're interested in my solution, I'd love to hear your feedback. Please give me a star if you've read this far. If this topic proves relevant, I'll propose a more rigorous numerical approach for this problem!
 
-==========
+# Задача о лестнице в углу
+Дано: a, b - ширина двух коридоров (неотрицательные числа) 
+Необходимо: найти длину бесконечно узкой (не имеющей ширины) лестницы, которую можно пронести через абсолютно прямой (90 градусов) угол, образованный двумя сходящимися коридорами с шириной a и b.
+
 В репозитории представлена анимация численного метода решения данной задачи. Если вас интересует аналитическое решение - вы можете найти его в интернете. Мне было интересно построить численную схему для данной задачи.
 
 Основными параметрами влияющими на скорость сходимости являются:
