@@ -5,7 +5,8 @@ It is necessary: to find the length of an infinitely narrow (without width) stai
 
 <img width="825" height="811" alt="image" src="https://github.com/user-attachments/assets/153e36f2-8695-49d3-afe5-527f75dc69f0" />
 <img width="832" height="789" alt="image" src="https://github.com/user-attachments/assets/f617c620-6b6b-479f-9b17-f359acbce8ca" />
-<img width="793" height="106" alt="image" src="https://github.com/user-attachments/assets/30bbb9a5-c112-42f4-a8a1-297ae843787c" />
+<img width="791" height="129" alt="image" src="https://github.com/user-attachments/assets/2bacd2ef-7662-443d-8054-6d81af521180" />
+
 
 The repository contains an animation of a numerical method for solving this problem. If you are interested in an analytical solution, you can find it on the Internet. I was interested in constructing a numerical scheme for this problem.
 
